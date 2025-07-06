@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+}
+
+.sideBar {
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
+  display: flex;
+}
+
+.mainLayout {
+  width: 100%;
+  padding-top: 12px;
+  padding-left: 12px;
+}

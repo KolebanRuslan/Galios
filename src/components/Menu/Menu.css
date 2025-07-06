@@ -1,0 +1,13 @@
+.menu {
+  padding-top: 12px;
+}
+
+.menu .button {
+  min-width: 100%;
+  border-radius: 0;
+  margin-bottom: 4px;
+}
+
+.menu .button:last-child {
+  margin-bottom: 0px;
+}
