@@ -7,18 +7,57 @@
 
 .atu, .cycles, .net, .poepse, .port, .power, .service, .shdsl, .signals, .stat, .switch {
   display: flex;
-  height: 90vh;
   font-size: 1rem;
   padding: 16px;
-  width: 100%;
+  width: calc(100% - 350px);
 }
 
 #root {
+  display: flex;
   max-width: 1280px;
   margin: 0 auto;
   position: relative;
+  flex-wrap: wrap;
 }
 
 main {
   display: flex;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.auth-form {
+  display: flex;
+  margin: auto;
+  height: 200px;
+  margin-top: calc(50% - 200px);
+  padding: 20px 40px;
+  border: 1px solid #cccccc;
+  border-radius: 16px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.auth-form-fields {
+  padding: 16px 0;
+}
+
+.auth-form-label {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+  color: #777777;
+}
+
+input.auth-form-control  {
+    padding: 8px;
+    width: 100%;
+    background-color: #ffffff !important;
+    outline: none;
+    color: #000;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
 }

@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Atu() {
   return (
-    <div className='atu'>
-      <h1>Cycles</h1>
-    </div>
+    <>
+      <Home />
+      <div className='atu'>
+        <h1>Atu</h1>
+      </div>
+    </>
   )
 }
 

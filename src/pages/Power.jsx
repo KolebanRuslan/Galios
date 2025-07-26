@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Power() {
   return (
-    <div className='power'>
-      <h1>Power</h1>
-    </div>
+    <>
+      <Home />
+      <div className='power'>
+        <h1>Power</h1>
+      </div>
+    </>
   )
 }
 

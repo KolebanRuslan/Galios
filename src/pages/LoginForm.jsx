@@ -1,48 +1,50 @@
 import { useState } from "react"
 import axios from "axios"
-import { StrictMode } from 'react'
-import ReactDOM from "react-dom"
 import Swal from "sweetalert2"
-import App from "../App"
+import { useNavigate } from "react-router-dom"
+import Button from "../components/Button/Button"
 
 function LoginForm(){
-
+    console.log('LoginForm render')
     const [password, setPassword] = useState("")
+    const navigate = useNavigate();
 
     async function handleLogin(e){
         e.preventDefault()
         try {
-            const rootElement = document.getElementById("root");
+            console.log('LoginForm Submited render')
             const requestBody = {password}
-            const response = await axios.post('https://jsonplaceholder.typicode.com/users', requestBody)
-            if (response) {
-              ReactDOM.render(
-                <StrictMode>
-                  <App />
-                </StrictMode>,
-                rootElement
-              )
+            const response = await axios.post('https://68849795745306380a38ba67.mockapi.io/api/v1/password', requestBody)
+            if (response.data.password === '0000') {
+              navigate('/stat')
+            } else {
+              Swal.fire({
+                icon: "error",
+                title: "Ошибка",
+                text: "Не верный пароль"
+            })
             }
-            //navigate('/stat')
         } catch (error) {
-            console.log(error);
             Swal.fire({
                 icon: "error",
-                title: "Oops...",
-                text: ""
-            });
+                title: "Ошибка",
+                text: error
+            })
+            navigate('/')
         }
     }
 
     return (
-        <div className="container" style={{marginTop:"10vh"}}>
+        <div className='auth-form'>
             <form onSubmit={handleLogin}>
-                <h2>Login</h2>
-                <div className="mb-3">
-                    <label htmlFor="password" className="form-label">Password :</label>
-                    <input onChange={e => {setPassword(e.target.value)}} type="password" className="form-control" id="password"/>
+                <h2>Авторизация</h2>
+                <div className="auth-form-fields">
+                    <label htmlFor="password" className="auth-form-label">Пароль</label>
+                    <input onChange={e => {setPassword(e.target.value)}} type="password" className="auth-form-control" id="password"/>
                 </div>
-                <button type="submit" className="btn btn-primary">LOG IN</button>
+                <Button>
+                  Войти
+                </Button>
             </form>
         </div>
     )

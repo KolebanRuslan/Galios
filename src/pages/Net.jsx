@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Net() {
   return (
-    <div className='net'>
-      <h1>Net</h1>
-    </div>
+    <>
+      <Home />
+      <div className='net'>
+        <h1>Net</h1>
+      </div>
+    </>
   )
 }
 

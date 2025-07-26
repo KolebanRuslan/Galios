@@ -11,7 +11,7 @@ import * as GiIcons from "react-icons/gi"
 export const SideBarData = [
   {
     title: 'Stat',
-    path: '/',
+    path: '/stat',
     icon: <IoIcons.IoIosStats />
   },
   {

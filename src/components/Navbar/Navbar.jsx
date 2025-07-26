@@ -1,10 +1,10 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { SideBarData } from './SidebarData'
 import './Navbar.css'
 import { IconContext } from 'react-icons'
 
 function Navbar() {
+  console.log('Navbar render')
   return (
     <>
       <IconContext.Provider value={{color: '#fff'}}>

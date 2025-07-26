@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Cycles() {
   return (
-    <div className='cycles'>
-      <h1>Cycles</h1>
-    </div>
+    <>
+      <Home />
+      <div className='cycles'>
+        <h1>Cycles</h1>
+      </div>
+    </>
   )
 }
 

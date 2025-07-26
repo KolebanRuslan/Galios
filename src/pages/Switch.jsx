@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Switch() {
   return (
-    <div className='switch'>
-      <h1>Switch</h1>
-    </div>
+    <>
+      <Home />
+      <div className='switch'>
+        <h1>Switch</h1>
+      </div>
+    </>
   )
 }
 

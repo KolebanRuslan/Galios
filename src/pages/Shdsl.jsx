@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Shdsl() {
   return (
-    <div className='shdsl'>
-      <h1>Shdsl</h1>
-    </div>
+    <>
+      <Home />
+      <div className='shdsl'>
+        <h1>Shdsl</h1>
+      </div>
+    </>
   )
 }
 

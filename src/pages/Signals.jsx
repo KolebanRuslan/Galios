@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Signals() {
   return (
-    <div className='signals'>
-      <h1>Signals</h1>
-    </div>
+    <>
+      <Home />
+      <div className='signals'>
+        <h1>Signals</h1>
+      </div>
+    </>
   )
 }
 

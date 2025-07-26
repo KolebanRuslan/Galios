@@ -4,4 +4,6 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #b8b8b8;
+  display: flex;
+  width: 100%;
 }

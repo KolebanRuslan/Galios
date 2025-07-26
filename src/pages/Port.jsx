@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Port() {
   return (
-    <div className='port'>
-      <h1>Port</h1>
-    </div>
+    <>
+      <Home />
+      <div className='port'>
+        <h1>Port</h1>
+      </div>
+    </>
   )
 }
 

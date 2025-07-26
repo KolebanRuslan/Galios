@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Stat() {
   return (
-    <div className='stat'>
-      <h1>Stat</h1>
-    </div>
+    <>
+      <Home />
+      <div className='stat'>
+        <h1>Stat</h1>
+      </div>
+    </>
   )
 }
 

@@ -1,10 +1,13 @@
-import React from 'react'
+import Home from '../pages/Home'
 
 function Service() {
   return (
-    <div className='service'>
-      <h1>Service</h1>
-    </div>
+    <>
+      <Home />
+      <div className='service'>
+        <h1>Service</h1>
+      </div>
+    </>
   )
 }
 
