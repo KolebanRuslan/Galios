@@ -40,7 +40,7 @@ export const SideBarData = [
     icon: <FaIcons.FaEllipsisV />
   },
   {
-    title: 'Poepse',
+    title: 'POE (PSE) и монитор устройства',
     path: '/poepse',
     icon: <PiIcons.PiGraphicsCardBold />
   },
