@@ -14,11 +14,13 @@ import Power from './pages/Power'
 import Service from './pages/Service'
 import UserProvider from './auth/userProvider'
 import PrivateRoute from './auth/PrivateRoute'
+import Header from './components/Header/Header'
 
 export default function App() {
-  console.log('App render')
+
   return (
     <UserProvider>
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Login />} />

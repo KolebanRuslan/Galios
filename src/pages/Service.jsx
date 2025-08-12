@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
+import Navbar from '../components/Navbar/Navbar'
 
 function Service() {
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='service'>
         <h1>Service</h1>
       </div>

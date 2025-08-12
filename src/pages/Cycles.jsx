@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
+import Navbar from '../components/Navbar/Navbar'
 
 function Cycles() {
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='cycles'>
         <h1>Cycles</h1>
       </div>

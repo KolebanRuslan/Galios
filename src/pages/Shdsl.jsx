@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
+import Navbar from '../components/Navbar/Navbar'
 
 function Shdsl() {
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='shdsl'>
         <h1>Shdsl</h1>
       </div>

@@ -4,10 +4,9 @@ import './Navbar.css'
 import { IconContext } from 'react-icons'
 
 function Navbar() {
-  console.log('Navbar render')
   return (
     <>
-      <IconContext.Provider value={{color: '#fff'}}>
+      <IconContext.Provider value={{color: '#000'}}>
         <nav className='nav-menu'>
           <ul className='nav-menu-items'>
             {SideBarData.map((item, index) => {

@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
+import Navbar from '../components/Navbar/Navbar'
 
 function Switch() {
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='switch'>
         <h1>Switch</h1>
       </div>

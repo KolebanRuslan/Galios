@@ -1,11 +1,12 @@
-import Button from '../Button/Button'
+import DeviceName from '../DeviceName/DeviceName'
 import './Header.css'
 
-export default function Header() {
-  console.log('Header render')
+function Header() {
   return (
     <header>
-      <span>Это Header</span>
+      <DeviceName />
     </header>
   )
 }
+
+export default Header

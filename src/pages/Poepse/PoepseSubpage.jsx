@@ -1,8 +1,10 @@
+import PoeTable from '../../components/PoePse/PoeTable/PoeTable'
+
 function PoepseSubpage() {
   return (
     <>
       <div className='PoepseSubpage'>
-        <h3>PoepseSubpage</h3>
+        <PoeTable />
       </div>
     </>
   )

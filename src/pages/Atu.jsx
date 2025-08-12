@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
+import Navbar from '../components/Navbar/Navbar'
 
 function Atu() {
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='atu'>
         <h1>Atu</h1>
       </div>

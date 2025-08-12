@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
+import Navbar from '../components/Navbar/Navbar'
 
 function Net() {
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='net'>
         <h1>Net</h1>
       </div>

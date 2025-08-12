@@ -12,9 +12,8 @@ function Login() {
 
   async function onSubmitForm(e){
       e.preventDefault()
-      console.log(password)
       try {
-          const response = await axios.post('/api/login', `${password}`)
+          const response = await axios.post('checkpassword', `${password}`)
           if (response.data === 'OK') {
             setAuth({ token: `token_${password}`})
             navigate('/stat')

@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import Button from '../../components/Button/Button'
-import Home from '../Home'
 import PoepseMonitorSubpage from './PoepseMonitorSubpage'
 import PoepseSubpage from './PoepseSubpage'
+import PoeStatus from '../../components/PoePse/PoeStatus/PoeStatus'
+import Navbar from '../../components/Navbar/Navbar'
 
 function Poepse() {
   const [content, setContent] = useState(PoepseSubpage)
@@ -20,8 +21,9 @@ function Poepse() {
 
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='poepse'>
+        <PoeStatus />
         <div className='poepse__buttons'>
           <Button onClick={clickOnPoePse} isActive={contentType === 'PoepseSubpage'}>
             POE/PSE

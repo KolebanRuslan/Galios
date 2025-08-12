@@ -1,0 +1,23 @@
+.poepse-table {
+  width: 100%;
+  border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.poepse-table td, .poepse-table th {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-image: initial;
+  padding: 6px;
+  text-align: center;
+}
+
+.poepse-table input[type='checkbox' i] {
+  display: block;
+  margin: 0 auto;
+}
+
+.poepse-table tr.selected {
+    background: rgba(39, 41, 43, 0.15);
+}

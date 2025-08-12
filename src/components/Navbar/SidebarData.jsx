@@ -1,12 +1,12 @@
 import React from 'react'
-import * as FaIcons from "react-icons/fa"
-import * as MdIcons from "react-icons/md"
-import * as IoIcons from "react-icons/io"
-import * as LuIcons from "react-icons/lu"
-import * as BiIcons from "react-icons/bi"
-import * as TbIcons from "react-icons/tb"
-import * as PiIcons from "react-icons/pi"
-import * as GiIcons from "react-icons/gi"
+import * as FaIcons from 'react-icons/fa'
+import * as MdIcons from 'react-icons/md'
+import * as IoIcons from 'react-icons/io'
+import * as LuIcons from 'react-icons/lu'
+import * as BiIcons from 'react-icons/bi'
+import * as TbIcons from 'react-icons/tb'
+import * as PiIcons from 'react-icons/pi'
+import * as GiIcons from 'react-icons/gi'
 
 export const SideBarData = [
   {
@@ -40,7 +40,7 @@ export const SideBarData = [
     icon: <FaIcons.FaEllipsisV />
   },
   {
-    title: 'POE (PSE) и монитор устройства',
+    title: 'POE(PSE) и монитор устройства',
     path: '/poepse',
     icon: <PiIcons.PiGraphicsCardBold />
   },

@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
+import Navbar from '../components/Navbar/Navbar'
 
 function Port() {
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='port'>
         <h1>Port</h1>
       </div>

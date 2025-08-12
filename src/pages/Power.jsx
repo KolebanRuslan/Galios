@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
+import Navbar from '../components/Navbar/Navbar'
 
 function Power() {
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='power'>
         <h1>Power</h1>
       </div>

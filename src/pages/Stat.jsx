@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
+import Navbar from '../components/Navbar/Navbar'
 
 function Stat() {
   return (
     <>
-      <Home />
+      <Navbar />
       <div className='stat'>
         <h1>Stat</h1>
       </div>
